@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
   <head>
+    <title>three.js webgl - materials - car</title>
     <meta charset="UTF-8">
-    <title>Playground - JavaScript 101</title>
+    <meta name ="vieport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type = "text/css" rel = "stylesheet" href = "main.css">
+    <style>
+      body{
+        color: #444;
+      }
+      a{
+        color: #08f;
+      }
+    </style>
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
+    <div id="info">
+      <a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> car materials demo by Efim Shliamin<br/>
+      Ferrari 458 Italia model by <a href="https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6" target="_blank" rel="noopener">vicent091036</a>
+      <br><br>
+      <span>Body: <select id="body-mat"></select></span>
+      <span>Details: <select id="rim-mat"></select></span>
+      <span>Glass: <select id="glass-mat"></select></span>
+      <br><br>
+      <span>Follow camera: <input type="checkbox" id="camera-toggle"></span>
+    </div>
+
+    <div id="container"></div>
 
     <!-- Add some HTML in here -->
+    <!-- <script src="js/three.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/threex.domevents/master/threex.domevents.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+    <script src = "https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
 
     <script src="main.js"></script>
   </body>
